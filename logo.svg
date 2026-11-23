@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-labelledby="title desc">
+  <title id="title">Капитан Дагестан</title>
+  <desc id="desc">Стилизованный горец-капитан на фоне гор и Каспийского моря</desc>
+
+  <defs>
+    <!-- Рамка: оранжевый -> золотой -> бирюзовый -->
+    <linearGradient id="rim" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f27a22"/>
+      <stop offset="48%" stop-color="#f2c14e"/>
+      <stop offset="100%" stop-color="#0f9c95"/>
+    </linearGradient>
+
+    <!-- Небо -->
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffd9a0"/>
+      <stop offset="55%" stop-color="#f6a45c"/>
+      <stop offset="100%" stop-color="#3fb8ad"/>
+    </linearGradient>
+
+    <!-- Море -->
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#18a9a2"/>
+      <stop offset="100%" stop-color="#075a63"/>
+    </linearGradient>
+
+    <radialGradient id="sunGlow">
+      <stop offset="0%" stop-color="#ffe9a8" stop-opacity=".95"/>
+      <stop offset="100%" stop-color="#f2c14e" stop-opacity="0"/>
+    </radialGradient>
+
+    <clipPath id="badgeClip">
+      <circle cx="120" cy="120" r="104"/>
+    </clipPath>
+  </defs>
+
+  <!-- Внешняя круглая рамка -->
+  <circle cx="120" cy="120" r="116" fill="url(#rim)"/>
+  <circle cx="120" cy="120" r="108" fill="#fff7ea"/>
+  <circle cx="120" cy="120" r="104" fill="url(#sky)"/>
+
+  <g clip-path="url(#badgeClip)">
+    <!-- Солнце и сияние -->
+    <circle cx="168" cy="72" r="46" fill="url(#sunGlow)"/>
+    <circle cx="168" cy="72" r="24" fill="#f2c14e" opacity=".92"/>
+
+    <!-- Дальние горы -->
+    <path d="M0 152 L42 92 L82 134 L124 68 L168 138 L204 98 L240 146 L240 240 L0 240 Z"
+          fill="#0d7774" opacity=".55"/>
+    <!-- Снежные вершины -->
+    <path d="M124 68 L112 88 L124 83 L137 90 Z" fill="#fff7ea" opacity=".85"/>
+    <path d="M42 92 L32 108 L44 103 L54 110 Z" fill="#fff7ea" opacity=".6"/>
+
+    <!-- Ближние горы -->
+    <path d="M0 178 L52 122 L96 166 L150 112 L202 172 L240 142 L240 240 L0 240 Z"
+          fill="#0a4f57"/>
+
+    <!-- Море -->
+    <path d="M0 184 C40 174 72 194 112 184 S182 174 240 186 L240 240 L0 240 Z"
+          fill="url(#sea)"/>
+    <path d="M12 198 C44 190 66 204 100 197 M140 204 C170 196 196 210 228 201"
+          fill="none" stroke="#f2c14e" stroke-width="2.5" stroke-linecap="round" opacity=".75"/>
+    <path d="M30 214 C60 208 84 220 118 213 M150 220 C178 213 202 224 226 217"
+          fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity=".4"/>
+
+    <!-- ===== Горец-капитан: силуэт ===== -->
+    <!-- Плечи и грудь -->
+    <path d="M58 240 C62 202 88 184 120 184 C152 184 178 202 182 240 Z" fill="#102a36"/>
+    <!-- Погоны: золотые полоски -->
+    <path d="M70 219 L96 208 M170 219 L144 208" stroke="#f2c14e" stroke-width="4" stroke-linecap="round"/>
+    <!-- Шея -->
+    <path d="M108 168 L132 168 L134 190 L106 190 Z" fill="#0c222c"/>
+    <!-- Голова -->
+    <ellipse cx="120" cy="146" rx="28" ry="32" fill="#173b47"/>
+    <!-- Борода -->
+    <path d="M94 150 Q120 184 146 150 Q142 174 120 182 Q98 174 94 150 Z" fill="#0b222c"/>
+    <!-- Фуражка: тулья -->
+    <path d="M90 122 Q120 92 150 122 L148 130 Q120 120 92 130 Z" fill="#102a36"/>
+    <!-- Фуражка: околыш -->
+    <rect x="88" y="122" width="64" height="12" rx="5" fill="#0b222c"/>
+    <!-- Золотая полоса на околыше -->
+    <path d="M92 129 H148" stroke="#f2c14e" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Кокарда -->
+    <path d="M120 116 L124 122 L120 128 L116 122 Z" fill="#f2c14e"/>
+    <!-- Козырёк -->
+    <path d="M92 134 Q120 144 148 134 Q120 150 92 134 Z" fill="#091d26"/>
+  </g>
+
+  <!-- Внутренняя тонкая золотая линия -->
+  <circle cx="120" cy="120" r="104" fill="none" stroke="#f2c14e" stroke-width="2" opacity=".9"/>
+
+  <!-- Надпись на ленте -->
+  <rect x="42" y="204" width="156" height="25" rx="12.5" fill="#102a36" opacity=".92"/>
+  <text x="120" y="221" text-anchor="middle"
+        font-family="Arial, sans-serif" font-size="12.5" font-weight="700"
+        letter-spacing="1.6" fill="#f2c14e">КАПИТАН ДАГЕСТАН</text>
+</svg>
