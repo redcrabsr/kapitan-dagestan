@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-label="Иллюстрация: драматичные горы Дагестана, башенный аул на скале и водопад">
+  <defs>
+    <linearGradient id="sky2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#123f52"/>
+      <stop offset=".4" stop-color="#0f9c95"/>
+      <stop offset=".72" stop-color="#f2c14e"/>
+      <stop offset="1" stop-color="#f27a22"/>
+    </linearGradient>
+    <linearGradient id="rock" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2c817f"/>
+      <stop offset="1" stop-color="#0d3a44"/>
+    </linearGradient>
+    <linearGradient id="rockDark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#18565b"/>
+      <stop offset="1" stop-color="#102a36"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d9f5f0"/>
+      <stop offset="1" stop-color="#5fc3bd"/>
+    </linearGradient>
+    <radialGradient id="sun2" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#fff4c8" stop-opacity=".95"/>
+      <stop offset="1" stop-color="#f2c14e" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="orn2" width="44" height="12" patternUnits="userSpaceOnUse">
+      <path d="M11 2 19 6 11 10 3 6Z M33 2 41 6 33 10 25 6Z" fill="none" stroke="#f2c14e" stroke-width="1.2" opacity=".85"/>
+      <circle cx="11" cy="6" r="1.6" fill="#f27a22" opacity=".8"/>
+      <circle cx="33" cy="6" r="1.6" fill="#f27a22" opacity=".8"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#sky2)"/>
+  <circle cx="180" cy="180" r="140" fill="url(#sun2)"/>
+  <circle cx="180" cy="180" r="38" fill="#fff1ba" opacity=".9"/>
+
+  <!-- лучи -->
+  <g stroke="#f2c14e" stroke-width="2" opacity=".25">
+    <path d="M180 180 30 60M180 180 120 20M180 180 250 30M180 180 340 90M180 180 330 250"/>
+  </g>
+
+  <!-- дальние пики -->
+  <path d="M0 300 96 170 158 238 250 118 340 240 430 152 520 250 610 138 708 244 770 188 800 226 800 450 0 450Z" fill="#6bbdb5" opacity=".65"/>
+  <g fill="#f4fbf7" opacity=".9">
+    <path d="M250 118 214 166 228 160 242 174 258 158 272 168 340 240 292 198Z"/>
+    <path d="M610 138 576 184 590 178 604 190 618 176 632 186 708 244 660 198Z"/>
+    <path d="M96 170 68 208 82 204 94 214 106 202 120 210 158 238 126 206Z"/>
+    <path d="M430 152 400 194 414 190 430 202 444 188 458 196 520 250 474 208Z"/>
+  </g>
+
+  <!-- основные скалы -->
+  <path d="M0 360 86 258 176 330 262 222 352 336 456 262 548 344 646 268 740 342 800 306 800 450 0 450Z" fill="url(#rock)"/>
+  <g fill="#eaf7f2" opacity=".55">
+    <path d="M262 222 234 262 248 258 262 270 276 256 290 264 352 336 306 292Z"/>
+    <path d="M646 268 620 302 634 298 646 308 660 296 674 304 740 342 694 300Z"/>
+  </g>
+
+  <!-- башенный аул на уступе -->
+  <g transform="translate(492 244)">
+    <path d="M-10 112 12 66 52 74 72 46 96 70 124 62 142 112Z" fill="#0b3540"/>
+    <g fill="#f4dda8" stroke="#a46c2e" stroke-width="1">
+      <rect x="16" y="74" width="30" height="26"/>
+      <rect x="52" y="68" width="26" height="32"/>
+      <rect x="86" y="78" width="28" height="22"/>
+      <rect x="60" y="30" width="16" height="42"/>
+      <rect x="56" y="24" width="24" height="8"/>
+      <path d="M56 24 68 8 80 24Z" fill="#f27a22"/>
+    </g>
+    <g fill="#7d4c22">
+      <rect x="24" y="82" width="6" height="9"/><rect x="36" y="82" width="6" height="9"/>
+      <rect x="60" y="76" width="6" height="9"/><rect x="72" y="76" width="6" height="9"/>
+      <rect x="96" y="86" width="6" height="8"/>
+      <rect x="65" y="40" width="6" height="9"/><rect x="65" y="58" width="6" height="9"/>
+    </g>
+    <path d="M68 9 69 -4 71 -4 72 9Z" fill="#f2c14e"/>
+    <path d="M69 -3 88 4 69 9Z" fill="#f2c14e"/>
+  </g>
+
+  <!-- водопад -->
+  <path d="M312 256c-6 42 6 62 2 96-3 28 8 46 4 76h26c6-30-4-48-2-72 2-34-8-56-4-100Z" fill="url(#water)" opacity=".9"/>
+  <g stroke="#ffffff" stroke-width="2" opacity=".5">
+    <path d="M322 274v88M332 286v76M314 300v54"/>
+  </g>
+  <ellipse cx="322" cy="430" rx="34" ry="9" fill="#bfe9e3" opacity=".5"/>
+
+  <!-- серпантин -->
+  <path d="M0 420c70-6 96-34 154-34 52 0 62 24 116 22 52-2 68-34 128-30 54 4 74 30 132 26 50-4 78-26 128-22 42 4 82 22 142 18" fill="none" stroke="#f2c14e" stroke-width="4" stroke-dasharray="14 10" opacity=".8"/>
+
+  <!-- передний план -->
+  <path d="M0 430c90-22 166-16 250 6 78 20 152 16 230-6 86-24 176-18 320 8v12H0Z" fill="url(#rockDark)" opacity=".9"/>
+
+  <!-- ковровая кайма -->
+  <rect x="0" y="0" width="800" height="12" fill="url(#orn2)"/>
+  <rect x="0" y="438" width="800" height="12" fill="url(#orn2)"/>
+  <rect x="0" y="0" width="800" height="450" fill="none" stroke="#f2c14e" stroke-opacity=".55" stroke-width="3"/>
+</svg>

@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-label="Иллюстрация: горы Дагестана, аул на скале и туристы на тропе">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a5f60"/>
+      <stop offset=".42" stop-color="#0f9c95"/>
+      <stop offset=".76" stop-color="#f2c14e"/>
+      <stop offset="1" stop-color="#f27a22"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#fff3c4" stop-opacity=".95"/>
+      <stop offset=".55" stop-color="#f2c14e" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#f2c14e" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="far" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ed3cc"/>
+      <stop offset="1" stop-color="#4aa9a3"/>
+    </linearGradient>
+    <linearGradient id="mid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2c8a86"/>
+      <stop offset="1" stop-color="#125e60"/>
+    </linearGradient>
+    <linearGradient id="near" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1a4b52"/>
+      <stop offset="1" stop-color="#102a36"/>
+    </linearGradient>
+    <pattern id="orn" width="44" height="12" patternUnits="userSpaceOnUse">
+      <path d="M11 2 19 6 11 10 3 6Z M33 2 41 6 33 10 25 6Z" fill="none" stroke="#f2c14e" stroke-width="1.2" opacity=".85"/>
+      <circle cx="11" cy="6" r="1.6" fill="#f27a22" opacity=".8"/>
+      <circle cx="33" cy="6" r="1.6" fill="#f27a22" opacity=".8"/>
+    </pattern>
+  </defs>
+
+  <!-- небо и солнце -->
+  <rect width="800" height="450" fill="url(#sky)"/>
+  <circle cx="610" cy="205" r="130" fill="url(#glow)"/>
+  <circle cx="610" cy="205" r="42" fill="#fff0b8" opacity=".95"/>
+  <g fill="#fff7e0" opacity=".45">
+    <path d="M90 105c18-10 46-10 64 0 22-12 52-8 66 6-40 8-92 10-130-6Z"/>
+    <path d="M430 78c14-8 36-8 50 0 18-9 40-6 52 5-32 7-72 8-102-5Z"/>
+  </g>
+
+  <!-- далёкие хребты -->
+  <path d="M0 268 92 178 150 226 232 132 320 232 402 166 486 244 566 176 654 248 730 196 800 252 800 450 0 450Z" fill="url(#far)" opacity=".78"/>
+  <g fill="#f7fbfa" opacity=".85">
+    <path d="M232 132 200 172 214 166 226 178 240 164 254 174 320 232 268 198Z"/>
+    <path d="M566 176 536 214 550 208 564 220 578 206 592 216 654 248 606 212Z"/>
+    <path d="M92 178 66 212 80 208 92 218 106 206 118 214 150 226 118 200Z"/>
+  </g>
+
+  <!-- средние горы -->
+  <path d="M0 322 110 236 196 300 288 214 372 306 468 238 560 320 660 252 748 312 800 280 800 450 0 450Z" fill="url(#mid)"/>
+  <g fill="#e8f6f2" opacity=".7">
+    <path d="M288 214 262 248 274 244 288 256 302 242 314 250 372 306 326 272Z"/>
+    <path d="M660 252 634 286 648 282 660 292 674 280 686 288 748 312 700 274Z"/>
+  </g>
+
+  <!-- аул на скале -->
+  <g transform="translate(120 232)">
+    <path d="M-16 96 6 58 30 66 44 40 62 58 84 52 104 96Z" fill="#0d3a42" opacity=".9"/>
+    <g fill="#f6dfae" stroke="#a46c2e" stroke-width="1">
+      <rect x="14" y="58" width="30" height="26" rx="1"/>
+      <rect x="50" y="50" width="26" height="34" rx="1"/>
+      <rect x="80" y="62" width="24" height="22" rx="1"/>
+      <rect x="40" y="34" width="14" height="26" rx="1"/>
+      <rect x="36" y="28" width="22" height="7"/>
+    </g>
+    <g fill="#7d4c22">
+      <rect x="22" y="66" width="6" height="9"/><rect x="34" y="66" width="6" height="9"/>
+      <rect x="58" y="60" width="6" height="9"/><rect x="70" y="60" width="6" height="9"/>
+      <rect x="88" y="70" width="6" height="8"/>
+      <rect x="44" y="42" width="6" height="8"/>
+    </g>
+    <path d="M46 28 47 12 49 12 50 28Z" fill="#f2c14e"/>
+    <path d="M47 13 62 18 47 22Z" fill="#f27a22"/>
+  </g>
+
+  <!-- передние холмы -->
+  <path d="M0 372c70-26 132-22 196 2 62 22 128 20 196-6 70-26 138-24 206 4 68 28 138 26 202 2v76H0Z" fill="url(#near)"/>
+
+  <!-- тропинка -->
+  <path d="M358 450c26-38 62-50 96-62 34-12 62-28 92-56" fill="none" stroke="#f2c14e" stroke-width="9" stroke-linecap="round" opacity=".55"/>
+  <path d="M358 450c26-38 62-50 96-62 34-12 62-28 92-56" fill="none" stroke="#fff3c4" stroke-width="2" stroke-dasharray="8 12" stroke-linecap="round" opacity=".9"/>
+
+  <!-- туристы -->
+  <g fill="#102a36">
+    <g transform="translate(398 414)">
+      <circle cx="0" cy="0" r="4"/><path d="M-4 5h8l2 16h-4l-2-8-2 8h-4Z"/><rect x="-9" y="6" width="6" height="9" rx="2" fill="#f27a22"/><path d="M-4 21-7 30M4 21l4 9" stroke="#102a36" stroke-width="3"/>
+    </g>
+    <g transform="translate(438 390)">
+      <circle cx="0" cy="0" r="4"/><path d="M-4 5h8l2 16h-4l-2-8-2 8h-4Z"/><rect x="3" y="6" width="6" height="9" rx="2" fill="#f2c14e"/><path d="M-4 21-7 30M4 21l4 9" stroke="#102a36" stroke-width="3"/>
+    </g>
+  </g>
+
+  <!-- ели -->
+  <g fill="#0b3b41">
+    <path d="M40 450 58 386 76 450ZM52 414 58 374 64 414ZM714 450 732 384 750 450ZM726 412 732 372 738 412ZM762 450 776 402 790 450Z"/>
+  </g>
+
+  <!-- ковровая кайма -->
+  <rect x="0" y="0" width="800" height="12" fill="url(#orn)"/>
+  <rect x="0" y="438" width="800" height="12" fill="url(#orn)"/>
+  <rect x="0" y="0" width="800" height="450" fill="none" stroke="#f2c14e" stroke-opacity=".55" stroke-width="3"/>
+</svg>
